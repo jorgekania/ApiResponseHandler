@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api Response Handler</title>
+  </head>
+  <body>
+    <!-- Exemplo de uso -->
+    <script type="module">
+      import ApiResponseHandler from "./src/ApiResponseHandler.js";
+
+      const apiResponseHandler = new ApiResponseHandler();
+
+      // Chamada para mensagem personalizada
+      apiResponseHandler.setCustomMessage(
+        404,
+        "A página que você procura não foi encontrada."
+      );
+
+      // Simule um código de status retornado pela API
+      const statusCode = 202;
+
+      const message = apiResponseHandler.getMessage(statusCode);
+      console.log("-> Status Code: " + statusCode); // Caso queira mostrar o estatus
+      console.log("-> Message: " + message.defaultMsg); // Voc~e pode mostrar mensagem
+      console.log("-> Description: " + message.description); // E se quiser a descrição do status retornado
+    </script>
+  </body>
+</html>

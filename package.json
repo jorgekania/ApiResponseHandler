@@ -1,0 +1,11 @@
+{
+  "name": "apiresponsehandler",
+  "version": "1.0.0",
+  "description": "A classe ApiResponseHandler fornece um mecanismo para obter mensagens de resposta HTTP. Ela contém um mapeamento de códigos de status HTTP para mensagens padrão, bem como um objeto para armazenar mensagens definidas pelo usuário.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Fabiano",
+  "license": "MIT"
+}
